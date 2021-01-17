@@ -17,8 +17,8 @@
 	      gtag('config', 'UA-186351316-1');
 	    </script>
 
-		<meta name="description" content="Camilo Aguilar's Personal Website."><meta name="keywords" content="Camilo Aguilar, PhD Quito, Image Processing, Purdue University, Camilo Gabriel Aguilar Herrera"><meta property="og:title" content="Camilo Aguilar's Publications."><meta property="og:description" content="I am an Ecuadorian engineer and scientist specialized in image processing and machine learning.">
- 	   <meta property="og:url" content="https://www.aguilarh.com/publications">
+		<meta name="description" content="Camilo Aguilar's Personal Website."><meta name="keywords" content="Camilo Aguilar, PhD Quito, Image Processing"><meta property="og:title" content="Camilo Aguilar's Personal Website."><meta property="og:description" content="I am an Ecuadorian engineer and scientist specialized in image processing and machine learning.">
+ 	   <meta property="og:url" content="https://www.aguilarh.com">
 	    <meta property="og:image" content="https://www.aguilarh.com/camilo_small2_cropped.png">
     	<meta property="og:image:secure_url" content="https://www.aguilarh.com/camilo_small2_cropped.png">
     
@@ -29,12 +29,12 @@
     	<meta name="twitter:image" content="https://www.aguilarh.com/camilo_small2_cropped.png">
 
 
-		<title> Camilo Aguilar|Publiclations</title>
-		<link rel="shortcut icon" href="mountain.png" type="image/x-icon" />
+		<title> Camilo Aguilar H</title>
+		<link rel="shortcut icon" href="../mountain.png" type="image/x-icon" />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets_old/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets_old/css/main.css" />
+		<link rel="stylesheet" href="../assets_old/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets_old/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets_old/css/ie9.css" /><![endif]-->
 
@@ -46,22 +46,23 @@
 		<!-- Nav -->
 			<nav id="nav">
 				<ul class="container">
-					<li><a href="index.html">Home</a></li>
-					<li><a style="color:red;" href="publications.html">Publications</a></li>
-					<li><a href="experience.html">CV</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../publications.html">Publications</a></li>
+					<li><a href="../experience.html" style="color:red">CV</a></li>
+					<li><a href="../contact.html">Contact</a></li>
 				</ul>
 			</nav>
+
 
 			<!-- Papers -->
 			<div class="wrapper style3">
 				<article id="portfolio">
 					<header>
-						<h2>Publications</h2>
+						<h2>Portfolio</h2>
 					</header>
 					<div class="container">
 						<header>
-							<h4>Accepted Publications</h4>
+							<h4>Publications</h4>
 						</header>
 						<ul class="list-group list-group-flush">
 						  <li class="list-group-item" style="text-align:left"> <strong> C.Aguilar </strong>, M. Comer, I. Hanhan, R. Agyei, M. Sangid. “Void Detection and fiber extraction for statistical characterization of fiber-reinforced polymers”. IS&T/SPIE Electronic Imaging, January 2020, Burlingame, CA. <a href="https://par.nsf.gov/biblio/10179419"> Link  </a></li> 
@@ -95,7 +96,6 @@
 			</div>
 
 
-
 		<!-- Contact -->
 			<div class="wrapper style4">
 				<article id="contact" class="container 75%">
@@ -108,13 +108,13 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets_old/js/jquery.min.js"></script>
-			<script src="assets_old/js/jquery.scrolly.min.js"></script>
-			<script src="assets_old/js/skel.min.js"></script>
-			<script src="assets_old/js/skel-viewport.min.js"></script>
-			<script src="assets_old/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets_old/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets_old/js/main.js"></script>
+			<script src="../assets_old/js/jquery.min.js"></script>
+			<script src="../assets_old/js/jquery.scrolly.min.js"></script>
+			<script src="../assets_old/js/skel.min.js"></script>
+			<script src="../assets_old/js/skel-viewport.min.js"></script>
+			<script src="../assets_old/js/util.js"></script>
+			<!--[if lte IE 8]><script src="../assets_old/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets_old/js/main.js"></script>
 
 			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -145,4 +145,42 @@
 </div> 
 
 
+<script>
+
+	$(document).ready(function() {
+
+	// Gets the video src from the data-src on each button
+
+	var $videoSrc;  
+	$('.video-btn').click(function() {
+	    $videoSrc = $(this).data( "src" );
+	});
+
+	// when the modal is opened autoplay it  
+	$('#myModal').on('shown.bs.modal', function (e) {
+	    
+	// set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+	$("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+	})
+	  
+
+
+	// stop playing the youtube video when I close the modal
+	$('#myModal').on('hide.bs.modal', function (e) {
+	    // a poor man's stop video
+	    $("#video").attr('src',$videoSrc); 
+	}) 
+	    
+	    
+
+
+	  
+	  
+	// document ready  
+	});
+
+
+
+
+</script>
 </html>
