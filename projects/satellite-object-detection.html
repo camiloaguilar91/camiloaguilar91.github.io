@@ -71,23 +71,44 @@
 			<div class="wrapper style3">
 				<article id="portfolio">
 					<header>
-						<h2> Summary </h2>
+						<h2> Satellite Object Tracking </h2>
 					</header>
 					<div class="container">
 
 						<li class="list-group-item" style="text-align:left"> 
 					  	<div class="row">
-							<div class="4u 12u(mobile)">
-								<span class="image fit"><img src="images/low_cost_chair.jpg" alt="Camilo Aguilar" style="margin-left:auto; margin-right:auto; margin-top:20px; max-height:250px; width:auto" /></span>
+							<div class="5u 12u(mobile)">
+								<span class="image fit"><img src="images/satellite_large.jpg" alt="Camilo Aguilar" style="margin-left:auto; margin-right:auto; margin-top:20px; max-width:500px; height:auto" /></span>
 							</div>
-							<div class="8u 12u(mobile)">
-									<p>
-										Object tracking is a challenging problem itself. 
+							<div class="7u 12u(mobile)">
+									<p style="vertical-align: middle; margin-top: 40px; font-size: 100%; text-align: justify;
+  									text-justify: inter-word;">
+										The objective of the postdoc is to develop a novel multi-object tracking method by combining stochastic models with machine learning approaches.
+										<br> <br>
 
-										The project will be focused on tracking dense population of moving objects in satellite videos. The main challenge of this application comes from the highly cluttered detection environment and the size of moving targets that can be very small. As a consequence, tracking objects based on their appearance is a challenge in itself. We therefore propose to work on a random finite set formulation of the tracking filter (PHD filter, see below) that formulates the tracking problem in a probabilistic problem where the main variable of interest is the intensity measure of a point process at the cost of losing individual targets. In a first step, we will focus on the insertion of a likelihood term based on a CNN output either in supervised learning (classification formulation) or in an unsupervised setting where variational autoencoders can indeed be used to map an input set of images onto a Gaussian distribution. A data likelihood term will therefore be built. This term will first be used in the classical PHD filter (SMC/ Gaussian or Box, to be defined during the study). In a second step, we will focus on the reformulation of the full PHD filter using CNNs by learning directly the different updating schemes (birth / prediction / correction) to be applied to a discrete representation of the intensity measure.
+										The multi-object tracking paradigm presents multiple challenges when working on high resolution images. Measurements will yield highly cluttered enviroments that can make difficult to distinguish small moving targets. In addition, the appearing/dissapearing objects denote a requirement to account for the variying the number of targets. Finally, tracking frameworks need to also estimate the data state at every time instance. 
 									</p>
 								
 							</div>
+
+							<br>
+
+							<div class="7u 12u(mobile)">
+									<p style="vertical-align: middle; margin-top: 40px; font-size: 100%; text-align: justify;
+  									text-justify: inter-word;">
+										During this postdoc, I will be modeling the system of interest with a probabilistic framework by using the Random Finite Set(RFS) approach. This approach accounts for measurement, cardinality estimation, and state estimation challenges by modeling the measurement vectors and state vectors as finite sets.
+										<br> <br>
+										During this project, I will be using Probability Hypothesis Density(PHD) filters approach to model the RFS distributions as Poisson Point Processes(PPP) where I will focus on estimating the intensity function of the PPP. 
+										<br> <br>
+										I am currently working on the first part of the postdoc, which requires developing machine learning-based methods to estimate the intesnisty function of the PPP. 
+									</p>
+								
+							</div>
+
+							<div class="5u 12u(mobile)">
+								<span class="image fit"><img src="images/points.jpg" alt="Camilo Aguilar" style="margin-left:auto; margin-right:auto; margin-top:20px; max-width:500px; height:auto" /></span>
+							</div>
+
 						</div>
 					  </li> 
 
